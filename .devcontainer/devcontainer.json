@@ -1,0 +1,24 @@
+{
+	"name": "Node.js Dev Container",
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:18-bullseye",
+	"features": {
+		"ghcr.io/devcontainers/features/git:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"dbaeumer.vscode-eslint",
+				"esbenp.prettier-vscode",
+				"ms-vscode.vscode-typescript-next"
+			]
+		}
+	},
+	"postCreateCommand": "npm install",
+	"forwardPorts": [3000],
+	"portsAttributes": {
+		"3000": {
+			"label": "Application",
+			"onAutoForward": "notify"
+		}
+	}
+}
