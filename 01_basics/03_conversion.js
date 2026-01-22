@@ -11,12 +11,12 @@ let isLoggedIn = "Safa Khan"; //type conversion from number to boolean
 let booleanIsLoggedIn = Boolean(isLoggedIn);
 console.log(booleanIsLoggedIn);
 
-// let score = null;
+let score = null;
 let numberScore = Number(score);
 console.log(typeof score);
 console.log(typeof (score));
 
-let score = true;
-let numberScore = Number(score);
+let value = true;
+let numberValue = Number(value);
 console.log(numberScore);
 console.log(typeof numberScore);
